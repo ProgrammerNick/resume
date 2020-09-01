@@ -1,0 +1,11 @@
+.DS_Store
+
+# Private things
+tls
+images
+
+# Terraform
+plan
+terraform.*
+lock.json
+terraform-*

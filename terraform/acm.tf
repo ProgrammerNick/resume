@@ -3,7 +3,7 @@ resource "aws_acm_certificate" "youre_nicked_cert" {
   certificate_body   = file("./tls/cert.pem")
   certificate_chain  = file("./tls/cert-chain.pem")
 
-  tags = {
+  /* tags = {
     project = var.tags_project
-  }
+  } */
 }

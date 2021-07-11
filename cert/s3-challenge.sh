@@ -1,0 +1,8 @@
+CHALLENGE_DATA=9Aa5PeV7HzId72AX9K3X9DeZ6ZAn8T3GNOf_X6Wtn6s.N7ecUaQRwzTpErmHJF8Z5lulry26olUPKAk5tpeIEV8
+CHALLENGE_FILE=9Aa5PeV7HzId72AX9K3X9DeZ6ZAn8T3GNOf_X6Wtn6s
+
+echo -n ${CHALLENGE_DATA} > ${CHALLENGE_FILE}
+
+aws s3 cp --acl public-read ${CHALLENGE_FILE} s3://www.yourenicked.net/.well-known/acme-challenge/${CHALLENGE_FILE}
+
+rm ${CHALLENGE_FILE}

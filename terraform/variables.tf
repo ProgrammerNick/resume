@@ -1,6 +1,12 @@
-variable "site-bucket-name" {}
+variable "resume-site-bucket-name" {}
 
-variable "index-file" {}
+variable "resume-index-file" {}
+
+variable "fans-site-bucket-name" {}
+
+variable "fans-fun-site-bucket-name" {}
+
+variable "fans-index-file" {}
 
 variable "tags_project" {}
 
